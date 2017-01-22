@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> -->
+    <!-- <script src="basic_form.js"></script> -->
+  </head>
+  <body id="formApp">
+    <h2>Form</h2>
+    <div>
+      <form class="" action="index.html" method="post">
+        <p>First Name: <input type="text" name="firstName"></p>
+        <p>Last Name: <input type="text" name="lastName"></p>
+        <p>
+          Gender:
+          <input type="radio" value="M" name="gender"> male
+          <input type="radio" value="F" name="gender"> female
+        </p>
+        <p>
+          Phones:
+          <span class="phone">
+            <input type="text" name="phone">
+          </span>
+          <button type="button" class="js-addItem">Add Phone</button>
+        </p>
+        <p>
+          address:<br/>
+          <span class="address">
+            <input type="text" name="street" value="" placeholder="street">
+            <input type="text" name="city" value="" placeholder="city">
+            <input type="text" name="state" value="" placeholder="state">
+            <input type="text" name="zipcode" value="" placeholder="zipcode"><br/>
+          </span>
+          <button type="button" class="js-addItem">Add Address</button>
+        </p>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <div id="print"></div>
+  </body>
+  <script src="basic_form.js"></script>
+</html>
