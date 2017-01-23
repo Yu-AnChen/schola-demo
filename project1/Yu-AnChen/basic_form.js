@@ -92,6 +92,8 @@ function addElement(type) {
     let child = arguments[i];
     if (typeof child == "string")
       child = document.createTextNode(child);
+    if (Array.isArray(child))
+      child = child.join(", ");
     node.append(child);
   }
   return node;
