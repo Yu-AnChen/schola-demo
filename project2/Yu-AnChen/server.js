@@ -37,7 +37,10 @@ const excludeStudentWithId = (req, res, next) => {
 }
 const updateScores = (req, res, next) => {
   let updatedStudent = JSON.parse(JSON.stringify(res.body.student));
-  updatedStudent.scores[req.body.type] = req.body.score;
+  updatedStudent.scores.forEach((element) => {
+    if (element.type == req.body.type)
+      element.score = req.body.score;
+  })
   res.body.updatedStudent = updatedStudent;
   next();
 }
