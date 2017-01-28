@@ -1,2 +1,2 @@
-const studentRouter = require('./student.router');
-module.exports = studentRouter;
+const studentRoutes = require('./student.routes');
+module.exports = studentRoutes;

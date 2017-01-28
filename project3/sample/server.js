@@ -5,7 +5,7 @@ const app = require('express')();
 */
 const studentRouter = require('./routers/student');
 app.use('/students?', studentRouter);
-
+// could be either student or students
 /*
     option2: dynamic require as middleware
 
